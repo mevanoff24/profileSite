@@ -1,1 +1,103 @@
-hello world
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block head_title %} Welcome | {% endblock %}
+
+<style>
+{% block style %}
+.jumbotron {
+	background-color: #00ADFF;
+	color: #FFF;
+}
+
+.navbar-static-top {
+	margin-bottom: 0px !important;
+}
+
+{% endblock %}
+</style>
+
+{% block jumbotron %}
+<div class="jumbotron">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<!-- Main component for a primary marketing message or call to action -->
+				<h1>My Data Science Site</h1>
+				<p>Hi I'm Matt Evanoff and I buit this site to show off my work</p>
+				<p>I am a back-end developer, future data scientist, and I live by one simple rule. Give 100% effort or don't do it at all. This personal promise to myself has changed my life and has taught me that passion ultimately drives my goals.</p>
+				<p>
+					<a class="btn btn-lg btn-primary" href="" role="button">Join Me &raquo;</a>
+				</p>
+			</div>
+			<div class="col-sm-6">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/ZmAFMNmSKus" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+
+ {% if request.user.is_authenticated %}
+ <div class="row">
+	<div class="col-sm-3 pull-right"> 
+		<h1>You are logged in!</h1>
+		
+		</form>
+	</div>
+{% if queryset %}
+	<h2>Welcome Staff</h2>
+	<table class='table'>
+	{% for instance in queryset %}
+		<tr><td>{{ forloop.counter }}</td><td>{{ instance.email }}</td><td>{{ instance.full_name }}</td><td>{{ instance.timestamp|timesince }} ago</td></tr>
+		{% if instance.email == "abc@gmail.edu" %}
+		<tr><td>is equal</td></tr>
+		{% endif %}
+	{% endfor %}
+	</table>
+
+	{% endif %}
+{% else %}
+
+<div class="row">
+	<div class="col-sm-3 pull-right"> 
+
+		<p class="lead text-align-center">{{ title }}</p>
+
+		<form method="POST" action="">{% csrf_token %}
+			{{ form|crispy }}
+			<input class="btn btn-primary" type="submit" value="SignUp"/>
+		</form>
+	</div>
+	{% endif %}
+
+	<div class="col-sm-3">
+		<p class="lead text-align-center">Built with Django &amp; Bootstrap</p>
+		<p class="text-align-center">
+		<i class="fa fa-cog fa-spin fa-5x"></i>
+		</p>
+	</div>
+
+	<div class="col-sm-3">
+		<p class="lead text-align-center">Built with Django &amp; Bootstrap</p>
+		<p class="text-align-center">
+		<i class="fa fa-github fa-5x"></i>
+		</p>
+	</div>
+
+	<div class="col-sm-3">
+		<p class="lead text-align-center">Built with Django &amp; Bootstrap</p>
+		<p class="text-align-center">
+		<i class="fa fa-cog fa-spin fa-5x"></i>
+		</p>
+	</div>
+
+</div>   
+
+{% endblock %}
+
+
+
