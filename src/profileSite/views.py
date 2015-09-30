@@ -5,4 +5,9 @@ def about(request):
 		context = {}
 		return render(request, page, context)
 
-		
+
+def resume(request):
+		page = 'resume.html'
+		context = {}
+		return render(request, page, context)
+

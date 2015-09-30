@@ -20,6 +20,7 @@ def home(request):
 
 
 def contact(request):
+	page = 'forms.html'
 	title = 'Contact Us'
 	title_align_center = True
 	form = ContactForm(request.POST or None)
@@ -45,6 +46,6 @@ def contact(request):
 		'title_align_center': title_align_center,
 	}
 
-	return render(request, 'forms.html', context)
+	return render(request, page, context)
 
 

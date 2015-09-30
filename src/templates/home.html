@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
+{% load staticfiles %}
 
 {% block head_title %} Welcome | {% endblock %}
 
@@ -27,7 +28,7 @@
 				<p>Hi I'm Matt Evanoff and I buit this site to show off my work</p>
 				<p>I am a back-end developer, future data scientist, and I live by one simple rule. Give 100% effort or don't do it at all. This personal promise to myself has changed my life and has taught me that passion ultimately drives my goals.</p>
 				<p>
-					<a class="btn btn-lg btn-primary" href="" role="button">Join Me &raquo;</a>
+					<a class="btn btn-lg btn-primary" href="{% url 'projects' %}" role="button">Projects &raquo;</a>
 				</p>
 			</div>
 			<div class="col-sm-6">
