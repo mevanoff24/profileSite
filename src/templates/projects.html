@@ -1,8 +1,83 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 
+<style>
+{% block style %}
+
+.project {
+	background-color: #00ADFF;
+	border-radius: 10px;
+	color: #FFF;	
+}
+
+{% endblock %}
+</style>
+
+
 {% block content %}
 
-<h1>My Projects</h1>
+<h1 class='text-align-center'>My Projects</h1>
+
+</br>
+</br>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4">
+			<div class='text-align-center project'>
+				<a href="{% url 'nycsubway' %}"<i class="fa fa-subway fa-5x"></i>
+				<h2 class='text-align-center'>NYC Subway</h2></a>
+				<p>This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project.</p>
+			</div>
+		</div>
+
+		<div class="col-sm-4">
+			<div class='text-align-center project'>
+				<a href="{% url 'sabermetrics' %}"<i class="fa fa-line-chart fa-5x"></i>
+				<h2 class='text-align-center'>Sabermetrics</h2></a>
+				<p>This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project.</p>
+			</div>
+		</div>
+
+		<div class="col-sm-4">
+			<div class='text-align-center project'>
+				<a href="{% url 'playoffprediction' %}"<i class="fa fa-newspaper-o fa-5x"></i>
+				<h2 class='text-align-center'>Playoff Prediction</h2></a>
+				<p>This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+</br>
+</br>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4">
+			<div class='text-align-center project'>
+				<a href="{% url 'enron' %}"<i class="fa fa-subway fa-5x"></i>
+				<h2 class='text-align-center'>Enron</h2></a>
+				<p>This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project.</p>
+			</div>
+		</div>
+
+		<div class="col-sm-4">
+			<div class='text-align-center project'>
+				<a href="{% url 'sabermetrics' %}"<i class="fa fa-line-chart fa-5x"></i>
+				<h2 class='text-align-center'>Project 1</h2></a>
+				<p>This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project.</p>
+			</div>
+		</div>
+
+		<div class="col-sm-4">
+			<div class='text-align-center project'>
+				<a href="{% url 'playoffprediction' %}"<i class="fa fa-newspaper-o fa-5x"></i>
+				<h2 class='text-align-center'>Project 1</h2></a>
+				<p>This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project. This is my project.</p>
+			</div>
+		</div>
+	</div>
+</div>
 
 {% endblock %}
