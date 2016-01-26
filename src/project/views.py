@@ -27,3 +27,32 @@ def enron(request):
 		page = 'enron.html'
 		context = {}
 		return render(request, page, context)
+
+def customersegmentation(request):
+		page = 'customersegmentation.html'
+		context = {}
+		return render(request, page, context)
+
+def twittersentiment(request):
+		page = 'twittersentiment.html'
+		context = {}
+		return render(request, page, context)
+
+def stockanalysis(request):
+		page = 'stockanalysis.html'
+		context = {}
+		return render(request, page, context)
+
+def movierecommendation(request):
+		page = 'movierecommendation.html'
+		context = {}
+		return render(request, page, context)
+
+def sfcrime(request):
+		page = 'sfcrime.html'
+		context = {}
+		return render(request, page, context)
+
+
+
+
