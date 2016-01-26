@@ -7,7 +7,6 @@ def projects(request):
 		context = {}
 		return render(request, page, context)
 
-
 def customersegments(request):
 		page = 'customersegments.html'
 		context = {}
@@ -52,6 +51,7 @@ def sfcrime(request):
 		page = 'sfcrime.html'
 		context = {}
 		return render(request, page, context)
+
 
 
 

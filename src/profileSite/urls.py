@@ -10,6 +10,7 @@ urlpatterns = [
     url(r'^$', 'newsletter.views.home', name='home'),
 	url(r'^contact/$', 'contact.views.contact', name='contact'),
     url(r'^about/$', 'profileSite.views.about', name='about'),
+    url(r'^certificates/$', 'profileSite.views.certificates', name='certificates'),
     url(r'^projects/$', 'project.views.projects', name='projects'),
     url(r'^projects/customersegments/$', 'project.views.customersegments', name='customersegments'),
     url(r'^projects/nycsubway/$', 'project.views.nycsubway', name='nycsubway'),
