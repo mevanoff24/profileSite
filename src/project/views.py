@@ -8,8 +8,8 @@ def projects(request):
 		return render(request, page, context)
 
 
-def sabermetrics(request):
-		page = 'sabermetrics.html'
+def customersegments(request):
+		page = 'customersegments.html'
 		context = {}
 		return render(request, page, context)
 
@@ -18,8 +18,8 @@ def nycsubway(request):
 		context = {}
 		return render(request, page, context)
 
-def playoffprediction(request):
-		page = 'playoffprediction.html'
+def pitchprediction(request):
+		page = 'pitchprediction.html'
 		context = {}
 		return render(request, page, context)
 
