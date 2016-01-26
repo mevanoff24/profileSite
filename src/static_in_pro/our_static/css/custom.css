@@ -1,3 +1,12 @@
 .text-align-center {
 		text-align: center;
 }
+
+.outline {
+    outline-style: dotted;
+    outline-color: red;
+}
+
+.sans {
+	font-family: Georgia;
+}
