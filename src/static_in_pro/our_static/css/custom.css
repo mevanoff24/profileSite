@@ -10,3 +10,9 @@
 .sans {
 	font-family: Georgia;
 }
+
+#about-bg{
+	background-color: #00ADFF;
+	border-radius: 30px;
+	padding: 20px 40px 20px 40px;
+}

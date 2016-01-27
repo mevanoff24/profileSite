@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 
+{% block head_title %} About | {% endblock %}
+
 <style>
 {% block style %}
 
@@ -19,24 +21,25 @@
 
 <div class="row">
 	<div class="col-sm-6 col-sm-offset-3">
-		<h1 class="text-align-center">Me in 30 Seconds</h1>
-		</br>
+		<h1 class="text-align-center">M.E. in 30 Seconds</h1>
 		</br>
 		<p></p>
 		<p></p>
-		<p class="text-align-center">"My name is Matt. I am a Data Scientist, Data Engineer specialist with experience in both programming and data mining. Expertise in predictive analysis and identifying and solving business related problems.</p> 
+		<div id='about-bg'><p class="text-align-center">"My name is Matt Evanoff. I am a Data Scientist and Data Engineer specialist. Experience in Programming, Predictive Analysis and Exploratory Data Analysis. I love endulging myslef in a compelling dataset to identify and solve a business problem.</p> 
 		<p class="text-align-center">I am a former student-athlete, turned coder, turned Data Scientist. In the past few years I have graduated from California Berkeley (Business and American Studies), Dev Bootcamp (Full Stack Development), and Udacity (Machine Learning Engineer). I am self-motivated team player with excellent communication skills."</p>
 		<p class="text-align-center">Contact me at: <strong>mevanoff24@gmail.com</strong></p>
 		<div class="text-align-center"><i>Website: Built in Django</i></div>
+		</div>
 	</div>
 </div>
 <!-- <div class="row">
-	<div class="col-sm-6 col-sm-offset-3">
+	<div class="col-sm-10 col-sm-offset-5">
 			<div>
 				<img class="img-responsive" src="{% static 'img/my_pic.jpg' %}">
 			</div>
 	</div>
 </div> -->
+</br>
 </br>
 </br>
 <div class="row">
